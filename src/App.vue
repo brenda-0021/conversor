@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ConversorDeMonedas />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ConversorDeMonedas from "./components/conversor.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ConversorDeMonedas,
+  },
+};
 </script>
 
 <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #1b5e20,
+    /* Verde fuerte */ #4caf50,
+    /* Verde normal */ #1b5e20 /* Verde fuerte */
+  );
 }
 </style>
